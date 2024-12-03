@@ -7,8 +7,7 @@
             <template lwc:if={products.data.records.length}>
                 <div class="content">
                     <template for:each={products.data.records} for:item="product">
-                        <!-- TO DO
-                         Add product tile component here-->
+                        <c-product-tile key={product.Id} product={product} draggable={tilesAreDraggable} onselected={handleProductSelected} class="slds-var-m-around_x-small"></c-product-tile>
                     </template>
                 </div>
                 <!-- TO DO

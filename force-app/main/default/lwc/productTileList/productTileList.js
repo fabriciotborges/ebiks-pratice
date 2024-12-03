@@ -9,6 +9,10 @@ export default class ProductTileList extends LightningElement {
 
     }
 
+    handleProductSelected(event){
+
+    }
+
     @wire (getProducts, {filters: "$filters", pageNumber: "$pageNumber"})
     products;
 }
